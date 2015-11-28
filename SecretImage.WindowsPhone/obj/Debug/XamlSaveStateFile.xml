@@ -1,0 +1,13 @@
+<XamlCompilerSaveState>
+  <ReferenceAssemblyList>
+    <LocalAssembly PathName="c:\users\amathur\documents\secretimage.source-v1.0.0.0\secretimage.windowsphone\obj\debug\intermediatexaml\secretimage.windowsphone.exe" HashGuid="c42295c9-3def-23d3-4884-e64fafdef399" />
+    <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windowsphoneapp\v8.1\extensionsdks\behaviorsxamlsdkmanaged\12.0\references\commonconfiguration\neutral\microsoft.xaml.interactions.dll" HashGuid="95a94f94-3917-d473-4f7c-18c4bd437046" />
+    <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windowsphoneapp\v8.1\extensionsdks\behaviorsxamlsdkmanaged\12.0\references\commonconfiguration\neutral\microsoft.xaml.interactivity.dll" HashGuid="d25f59e6-dd81-900a-0dfc-55b39f6898ef" />
+    <ReferenceAssembly PathName="c:\users\amathur\documents\secretimage.source-v1.0.0.0\packages\windowsappstudio.common.1.0.1\lib\portable-win81+wpa81\appstudio.common.dll" HashGuid="bf4f70ae-9a11-ab6f-4949-cb148a07b315" />
+    <ReferenceAssembly PathName="c:\users\amathur\documents\secretimage.source-v1.0.0.0\packages\windowsappstudio.dataproviders.1.0.1\lib\portable-win81+wpa81\appstudio.dataproviders.dll" HashGuid="8e6c5f55-a161-846e-fdd0-6163d87ad2be" />
+    <ReferenceAssembly PathName="c:\users\amathur\documents\secretimage.source-v1.0.0.0\packages\htmlagilitypack.1.4.9\lib\portable-net45+netcore45+wpa81+wp8+monoandroid+monotouch\htmlagilitypack.dll" HashGuid="365e4636-8cbf-8d2d-3790-d3267e801443" />
+    <ReferenceAssembly PathName="c:\users\amathur\documents\secretimage.source-v1.0.0.0\packages\windowsazure.mobileservices.1.3.2\lib\wpa81\microsoft.windowsazure.mobile.dll" HashGuid="5b462045-d27b-e518-25e9-78bf6305d2d1" />
+    <ReferenceAssembly PathName="c:\users\amathur\documents\secretimage.source-v1.0.0.0\packages\windowsazure.mobileservices.1.3.2\lib\wpa81\microsoft.windowsazure.mobile.ext.dll" HashGuid="55d46a17-b94f-0632-1660-bd4332856778" />
+    <ReferenceAssembly PathName="c:\users\amathur\documents\secretimage.source-v1.0.0.0\packages\newtonsoft.json.7.0.1\lib\portable-net45+wp80+win8+wpa81+dnxcore50\newtonsoft.json.dll" HashGuid="86223907-5808-be51-71b4-c872f8140e29" />
+  </ReferenceAssemblyList>
+</XamlCompilerSaveState>
