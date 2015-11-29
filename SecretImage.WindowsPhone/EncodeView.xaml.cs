@@ -124,7 +124,7 @@ namespace SecretImage
 
         private async void SaveSecretImage_Click(object sender, RoutedEventArgs e)
         {
-            StorageFile myfile = await KnownFolders.PicturesLibrary.CreateFileAsync("Secret_" + filename);
+            StorageFile myfile = await KnownFolders.PicturesLibrary.CreateFileAsync("Secret_" + filename, CreationCollisionOption.GenerateUniqueName);
             BitmapDecoder bmpDecoder = await BitmapDecoder.CreateAsync(bitmapstream);
             PixelDataProvider pixelData = await bmpDecoder.GetPixelDataAsync(BitmapPixelFormat.Rgba8, BitmapAlphaMode.Straight, new BitmapTransform(), ExifOrientationMode.RespectExifOrientation, ColorManagementMode.DoNotColorManage);
             using (var destFileStream = await myfile.OpenAsync(FileAccessMode.ReadWrite))
