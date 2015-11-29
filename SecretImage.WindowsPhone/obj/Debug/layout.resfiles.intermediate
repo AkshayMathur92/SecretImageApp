@@ -21,6 +21,8 @@ Controls\ConnectionNotificationControl.xbf
 Controls\ErrorNotificationControl.xbf
 Controls\ImageViewer.xbf
 Controls\YouTubeViewer.xbf
+DecodeView.xbf
+EncodeView.xbf
 MainPage.xbf
 SecretImage.WindowsPhone.xr.xml
 Styles\AppBarButtons.xbf
@@ -32,3 +34,4 @@ Styles\GridView.xbf
 Styles\Layouts\DetailLayouts.xbf
 Styles\Layouts\ListLayouts.xbf
 Styles\PlatformStyles.xbf
+Themes\Generic.xbf

@@ -1,6 +1,6 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
-    <LocalAssembly PathName="c:\users\amathur\documents\secretimage.source-v1.0.0.0\secretimage.windows\obj\debug\intermediatexaml\secretimage.windows.exe" HashGuid="c12c9994-66be-8956-7759-42085c88273b" />
+    <LocalAssembly PathName="c:\users\amathur\documents\secretimage.source-v1.0.0.0\secretimage.windows\obj\debug\intermediatexaml\secretimage.windows.exe" HashGuid="fc227a23-05fe-163b-fecd-d8db4379fc46" />
     <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\behaviorsxamlsdkmanaged\12.0\references\commonconfiguration\neutral\microsoft.xaml.interactions.dll" HashGuid="95a94f94-3917-d473-4f7c-18c4bd437046" />
     <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\behaviorsxamlsdkmanaged\12.0\references\commonconfiguration\neutral\microsoft.xaml.interactivity.dll" HashGuid="d25f59e6-dd81-900a-0dfc-55b39f6898ef" />
     <ReferenceAssembly PathName="c:\users\amathur\documents\secretimage.source-v1.0.0.0\packages\windowsappstudio.common.1.0.1\lib\portable-win81+wpa81\appstudio.common.dll" HashGuid="bf4f70ae-9a11-ab6f-4949-cb148a07b315" />

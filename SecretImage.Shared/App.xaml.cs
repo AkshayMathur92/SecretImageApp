@@ -56,7 +56,9 @@ namespace SecretImage
         {
 
             this.InitializeComponent();
-            MobileService= new MobileServiceClient("http://localhost:61189");
+            
+            MobileService = new MobileServiceClient("https://steganoserviveproject.azure-mobile.net/", "pbYHcQQELkkCtSZgOfBubQYPgDNgOP16");
+            //MobileService = new MobileServiceClient("http://localhost:61189");
             this.Suspending += this.OnSuspending;
         }
 

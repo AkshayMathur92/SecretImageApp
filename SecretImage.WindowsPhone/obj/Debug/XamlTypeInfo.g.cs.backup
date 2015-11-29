@@ -124,7 +124,7 @@ namespace SecretImage.SecretImage_WindowsPhone_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[39];
+            _typeNameTable = new string[41];
             _typeNameTable[0] = "AppStudio.Common.Converters.VisibilityConverter";
             _typeNameTable[1] = "Object";
             _typeNameTable[2] = "AppStudio.Common.Converters.StringVisibilityConverter";
@@ -155,17 +155,19 @@ namespace SecretImage.SecretImage_WindowsPhone_XamlTypeInfo
             _typeNameTable[27] = "AppStudio.Common.Actions.ActionType";
             _typeNameTable[28] = "System.Enum";
             _typeNameTable[29] = "System.ValueType";
-            _typeNameTable[30] = "SecretImage.MainPage";
-            _typeNameTable[31] = "SecretImage.ViewModels.MainViewModel";
-            _typeNameTable[32] = "AppStudio.Common.ObservableBase";
-            _typeNameTable[33] = "SecretImage.Controls.ErrorNotificationControl";
-            _typeNameTable[34] = "AppStudio.Common.Commands.ItemClickCommand";
-            _typeNameTable[35] = "Windows.UI.Color";
-            _typeNameTable[36] = "Byte";
-            _typeNameTable[37] = "AppStudio.Common.Converters.RichTextBlockStyleConverter";
-            _typeNameTable[38] = "Windows.UI.Xaml.Style";
+            _typeNameTable[30] = "SecretImage.DecodeView";
+            _typeNameTable[31] = "SecretImage.EncodeView";
+            _typeNameTable[32] = "SecretImage.MainPage";
+            _typeNameTable[33] = "SecretImage.ViewModels.MainViewModel";
+            _typeNameTable[34] = "AppStudio.Common.ObservableBase";
+            _typeNameTable[35] = "SecretImage.Controls.ErrorNotificationControl";
+            _typeNameTable[36] = "AppStudio.Common.Commands.ItemClickCommand";
+            _typeNameTable[37] = "Windows.UI.Color";
+            _typeNameTable[38] = "Byte";
+            _typeNameTable[39] = "AppStudio.Common.Converters.RichTextBlockStyleConverter";
+            _typeNameTable[40] = "Windows.UI.Xaml.Style";
 
-            _typeTable = new global::System.Type[39];
+            _typeTable = new global::System.Type[41];
             _typeTable[0] = typeof(global::AppStudio.Common.Converters.VisibilityConverter);
             _typeTable[1] = typeof(global::System.Object);
             _typeTable[2] = typeof(global::AppStudio.Common.Converters.StringVisibilityConverter);
@@ -196,15 +198,17 @@ namespace SecretImage.SecretImage_WindowsPhone_XamlTypeInfo
             _typeTable[27] = typeof(global::AppStudio.Common.Actions.ActionType);
             _typeTable[28] = typeof(global::System.Enum);
             _typeTable[29] = typeof(global::System.ValueType);
-            _typeTable[30] = typeof(global::SecretImage.MainPage);
-            _typeTable[31] = typeof(global::SecretImage.ViewModels.MainViewModel);
-            _typeTable[32] = typeof(global::AppStudio.Common.ObservableBase);
-            _typeTable[33] = typeof(global::SecretImage.Controls.ErrorNotificationControl);
-            _typeTable[34] = typeof(global::AppStudio.Common.Commands.ItemClickCommand);
-            _typeTable[35] = typeof(global::Windows.UI.Color);
-            _typeTable[36] = typeof(global::System.Byte);
-            _typeTable[37] = typeof(global::AppStudio.Common.Converters.RichTextBlockStyleConverter);
-            _typeTable[38] = typeof(global::Windows.UI.Xaml.Style);
+            _typeTable[30] = typeof(global::SecretImage.DecodeView);
+            _typeTable[31] = typeof(global::SecretImage.EncodeView);
+            _typeTable[32] = typeof(global::SecretImage.MainPage);
+            _typeTable[33] = typeof(global::SecretImage.ViewModels.MainViewModel);
+            _typeTable[34] = typeof(global::AppStudio.Common.ObservableBase);
+            _typeTable[35] = typeof(global::SecretImage.Controls.ErrorNotificationControl);
+            _typeTable[36] = typeof(global::AppStudio.Common.Commands.ItemClickCommand);
+            _typeTable[37] = typeof(global::Windows.UI.Color);
+            _typeTable[38] = typeof(global::System.Byte);
+            _typeTable[39] = typeof(global::AppStudio.Common.Converters.RichTextBlockStyleConverter);
+            _typeTable[40] = typeof(global::Windows.UI.Xaml.Style);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -254,9 +258,11 @@ namespace SecretImage.SecretImage_WindowsPhone_XamlTypeInfo
         private object Activate_23_ActionsCommandBar() { return new global::AppStudio.Common.Actions.ActionsCommandBar(); }
         private object Activate_25_List() { return new global::System.Collections.Generic.List<global::AppStudio.Common.Actions.ActionInfo>(); }
         private object Activate_26_ActionInfo() { return new global::AppStudio.Common.Actions.ActionInfo(); }
-        private object Activate_30_MainPage() { return new global::SecretImage.MainPage(); }
-        private object Activate_33_ErrorNotificationControl() { return new global::SecretImage.Controls.ErrorNotificationControl(); }
-        private object Activate_37_RichTextBlockStyleConverter() { return new global::AppStudio.Common.Converters.RichTextBlockStyleConverter(); }
+        private object Activate_30_DecodeView() { return new global::SecretImage.DecodeView(); }
+        private object Activate_31_EncodeView() { return new global::SecretImage.EncodeView(); }
+        private object Activate_32_MainPage() { return new global::SecretImage.MainPage(); }
+        private object Activate_35_ErrorNotificationControl() { return new global::SecretImage.Controls.ErrorNotificationControl(); }
+        private object Activate_39_RichTextBlockStyleConverter() { return new global::AppStudio.Common.Converters.RichTextBlockStyleConverter(); }
         private void VectorAdd_25_List(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::AppStudio.Common.Actions.ActionInfo>)instance;
@@ -457,41 +463,55 @@ namespace SecretImage.SecretImage_WindowsPhone_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 30:   //  SecretImage.MainPage
+            case 30:   //  SecretImage.DecodeView
                 userType = new global::SecretImage.SecretImage_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("SecretImage.PageBase"));
-                userType.Activator = Activate_30_MainPage;
+                userType.Activator = Activate_30_DecodeView;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 31:   //  SecretImage.EncodeView
+                userType = new global::SecretImage.SecretImage_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("SecretImage.PageBase"));
+                userType.Activator = Activate_31_EncodeView;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 32:   //  SecretImage.MainPage
+                userType = new global::SecretImage.SecretImage_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("SecretImage.PageBase"));
+                userType.Activator = Activate_32_MainPage;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 31:   //  SecretImage.ViewModels.MainViewModel
+            case 33:   //  SecretImage.ViewModels.MainViewModel
                 userType = new global::SecretImage.SecretImage_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("AppStudio.Common.ObservableBase"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 32:   //  AppStudio.Common.ObservableBase
+            case 34:   //  AppStudio.Common.ObservableBase
                 userType = new global::SecretImage.SecretImage_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 xamlType = userType;
                 break;
 
-            case 33:   //  SecretImage.Controls.ErrorNotificationControl
+            case 35:   //  SecretImage.Controls.ErrorNotificationControl
                 userType = new global::SecretImage.SecretImage_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_33_ErrorNotificationControl;
+                userType.Activator = Activate_35_ErrorNotificationControl;
                 userType.AddMemberName("IsVisible");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 34:   //  AppStudio.Common.Commands.ItemClickCommand
+            case 36:   //  AppStudio.Common.Commands.ItemClickCommand
                 userType = new global::SecretImage.SecretImage_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.AddMemberName("Command");
                 xamlType = userType;
                 break;
 
-            case 35:   //  Windows.UI.Color
+            case 37:   //  Windows.UI.Color
                 userType = new global::SecretImage.SecretImage_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.AddMemberName("A");
                 userType.AddMemberName("B");
@@ -500,22 +520,22 @@ namespace SecretImage.SecretImage_WindowsPhone_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 36:   //  Byte
+            case 38:   //  Byte
                 userType = new global::SecretImage.SecretImage_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 37:   //  AppStudio.Common.Converters.RichTextBlockStyleConverter
+            case 39:   //  AppStudio.Common.Converters.RichTextBlockStyleConverter
                 userType = new global::SecretImage.SecretImage_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_37_RichTextBlockStyleConverter;
+                userType.Activator = Activate_39_RichTextBlockStyleConverter;
                 userType.AddMemberName("LargeStyle");
                 userType.AddMemberName("NormalStyle");
                 userType.AddMemberName("SmallStyle");
                 xamlType = userType;
                 break;
 
-            case 38:   //  Windows.UI.Xaml.Style
+            case 40:   //  Windows.UI.Xaml.Style
                 xamlType = new global::SecretImage.SecretImage_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }
