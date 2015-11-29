@@ -16,7 +16,7 @@
         <Button Name="ButtonImageSelect" IsEnabled="true" Click="ButtonImageSelect_Click" Margin="0,170,0,358">Select Image</Button>
         <Image Name="ImageThumbnail" Height="75" Width="75" Margin="166,186,129,0" Stretch="UniformToFill" Source="{Binding Picture}" VerticalAlignment="Top"/>
         <Button Name="GetSecretMessage" Click="GetSecretMessage_Click" IsEnabled="False" Margin="65,275,0,283" Width="227">Decode Secret Message</Button>
-        <TextBlock Name="Message" Style="{StaticResource BodyTextBlockStyle}" Text="" TextWrapping="Wrap" Margin="0,340,0,0"/>
+        <TextBlock Name="Message" Style="{StaticResource BodyTextBlockStyle}" Text="" TextWrapping="Wrap" Margin="0,443,0,0"/>
         <Hub x:Name="Container" Margin="0,32,0,0" Background="{StaticResource AppBackground}" DataContext="{Binding}" HeaderTemplate="{StaticResource PageHeader}" was_commands:SectionHeaderClickCommand.Command="{Binding SectionHeaderClickCommand}">
 
         </Hub>
